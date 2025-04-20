@@ -38,59 +38,70 @@ class Program
         //goto main;
 
 
-        //3
-        Employee employee = new Employee();
+        ////3
+        //Employee employee = new Employee();
 
-        employee.Name = "Abdullox";
-        employee.Position = "Cyber Security";
+        //employee.Name = "Abdullox";
+        //employee.Position = "Cyber Security";
 
-    mainMenu:
-        Console.WriteLine("1. Ismi \n2. Lavozimi \n3. Maoshi \n0. Exit");
-        int selectedMenu = Convert.ToInt32(Console.ReadLine());
+        //mainMenu:
+        //Console.WriteLine("1. Ismi \n2. Lavozimi \n3. Maoshi \n0. Exit");
+        //int selectedMenu = Convert.ToInt32(Console.ReadLine());
 
-        if (selectedMenu == 1)
-        {
-            Console.WriteLine($"Ismi: {employee.Name}");
-        }
-        else if (selectedMenu == 2)
-        {
-            Console.WriteLine($"Lavozimi: {employee.Position}");
-        }
-        else if (selectedMenu == 3)
-        {
-        salaryMenu:
-            Console.WriteLine("1. Maoshini tekshirish \n2. Yangi maosh kiritish \n0. Exit");
-            int selectedMenu3 = Convert.ToInt32(Console.ReadLine());
+        //if (selectedMenu == 1)
+        //{
+        //    Console.WriteLine($"Ismi: {employee.Name}");
+        //}
+        //else if (selectedMenu == 2)
+        //{
+        //    Console.WriteLine($"Lavozimi: {employee.Position}");
+        //}
+        //else if (selectedMenu == 3)
+        //{
+        //    salaryMenu:
+        //    Console.WriteLine("1. Maoshini tekshirish \n2. Yangi maosh kiritish \n0. Exit");
+        //    int selectedMenu3 = Convert.ToInt32(Console.ReadLine());
 
-            if (selectedMenu3 == 1)
-            {
-                Console.WriteLine($"Maosh: {employee.GetSalary()}");
-            }
-            else if (selectedMenu3 == 2)
-            {
-                Console.Write("Yangi maosh kiritish - ");
-                int newSalary = Convert.ToInt32(Console.ReadLine());
+        //    if (selectedMenu3 == 1)
+        //    {
+        //        Console.WriteLine($"Maosh: {employee.GetSalary()}");
+        //    }
+        //    else if (selectedMenu3 == 2)
+        //    {
+        //        Console.Write("Yangi maosh kiritish - ");
+        //        int newSalary = Convert.ToInt32(Console.ReadLine());
 
-                employee.SetSalary(newSalary);
-            }
-            else if (selectedMenu3 == 0)
-            {
-                goto mainMenu;
-            }
-            goto salaryMenu;
-        }
-        else if (selectedMenu == 0)
-        {
-            goto exit;
-        }
+        //        employee.SetSalary(newSalary);
+        //    }
+        //    else if (selectedMenu3 == 0)
+        //    {
+        //        goto mainMenu;
+        //    }
+        //    goto salaryMenu;
+        //}
+        //else if (selectedMenu == 0)
+        //{
+        //    goto exit;
+        //}
 
-        Console.WriteLine();
+        //Console.WriteLine();
 
-        goto mainMenu;
-    exit:;
+        //goto mainMenu;
+        //exit:;
 
 
+        ////4
 
+
+        ////5
+        Temperature temperature = new Temperature();
+
+        var result = temperature.GetTemperature();
+
+        Console.WriteLine($"Temperature: {result}°C");
+
+
+        ////6
 
 
     }
