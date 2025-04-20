@@ -94,15 +94,41 @@ class Program
 
 
         ////5
-        Temperature temperature = new Temperature();
+        //Temperature temperature = new Temperature();
 
-        var result = temperature.GetTemperature();
+        //var result = temperature.GetTemperature();
 
-        Console.WriteLine($"Temperature: {result}°C");
+        //Console.WriteLine($"Temperature: {result}°C");
 
 
         ////6
+        Time time = new Time();
 
+        mainMenu:
+        Console.WriteLine("1. Vaqtni ko'rsatish \n2. Vaqtni sozlash \n0. Exit");
+        int selectedMenu = Convert.ToInt32(Console.ReadLine());
+        
+        if (selectedMenu == 1)
+        {
+            time.GetTime();
+        }
+        else if (selectedMenu == 2)
+        {
+            Console.Write("Soat ni kiriting! - ");
+            int hour = Convert.ToInt32(Console.ReadLine());
 
+            Console.Write("Minut ni kiriting! - ");
+            int minute = Convert.ToInt32(Console.ReadLine());
+
+            time.SetTime(hour, minute);
+        }
+        else if (selectedMenu == 0)
+        {
+            goto exit;
+        }
+        Console.WriteLine();
+
+        goto mainMenu;
+        exit:;
     }
 }
