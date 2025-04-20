@@ -9,14 +9,10 @@
             get { return _age; }
             set
             {
-                if (value !<= 0)
-                {
+                if (!(value <= 0))
                     _age = value;
-                }
                 else
-                {
                     Console.WriteLine("Iltimos 0 dan katta yosh kiriting!");
-                }
             }
         }
     }
